@@ -224,6 +224,13 @@ module.exports = {
     [
       'link',
       {
+        href: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@0/dist/algoliasearchNetlify.css',
+        rel: 'stylesheet'
+      }
+    ],
+    [
+      'link',
+      {
         rel: 'icon',
         href: '/logo.png'
       }
@@ -262,7 +269,13 @@ module.exports = {
         src: 'https://extend.vimeocdn.com/ga/72160148.js',
         defer: 'defer'
       }
-    ]
+    ],
+    [
+      'script',
+      {
+        src: 'https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend/dist/algoliasearchNetlify.js'
+      }
+    ],
   ],
   themeConfig: {
     logo: '/logo.png',
@@ -388,10 +401,10 @@ module.exports = {
       '/examples/': sidebar.examples
     },
     smoothScroll: false,
-    algolia: {
-      indexName: 'vuejs-v3',
-      apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
-    }
+    // algolia: {
+    //   indexName: 'vuejs-v3',
+    //   apiKey: 'bc6e8acb44ed4179c30d0a45d6140d3f'
+    // }
   },
   plugins: [
     [

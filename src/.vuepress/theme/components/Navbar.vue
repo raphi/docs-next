@@ -104,6 +104,10 @@ function css(el, property) {
 $navbar-vertical-padding = 0.7rem;
 $navbar-horizontal-padding = 1.5rem;
 
+.algolia-autocomplete {
+  width: 36% !important;
+}
+
 .navbar {
   padding: $navbar-vertical-padding $navbar-horizontal-padding;
   line-height: $navbarHeight - 1.4rem;
